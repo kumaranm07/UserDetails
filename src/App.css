@@ -1,38 +1,78 @@
+body {
+    margin-top: 20px;
+    color: #1a202c;
+    text-align: left;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-container .content-container {
+    flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-container {
+    background-image: radial-gradient(circle 588px at 31.7% 40.2%, rgba(225, 200, 239, 1) 21.4%, rgba(163, 225, 233, 1) 57.1%);
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content-container {
+    min-width: 40%;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+    text-align: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.content-container h1 {
+    margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .footer-container span {
+    padding-right: 10px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.footer-container {
+    margin-top: 20px;
+} */
+.footer-container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.footer-container th,
+td {
+    text-align: left;
+    padding: 10px;
+}
+
+
+.footer-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.footer-container {
+    overflow-x: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.content-container img {
+    width: 50%;
+    height: 40vh;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 18px;
 }
